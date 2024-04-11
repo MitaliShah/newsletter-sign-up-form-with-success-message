@@ -122,3 +122,36 @@ body {
 .subscribe-btn {
   margin-top: 24px;
 }
+
+.hidden {
+  display: none;
+}
+
+.success-icon {
+  width: 64px;
+  height: 64px;
+}
+
+.error {
+  color: red;
+}
+
+.success-container {
+  height: 100vh;
+  /* display: flex; */
+  flex-direction: column;
+}
+
+.success-icon {
+  margin-top: 40%;
+  margin-bottom: 40px;
+}
+
+.success-title {
+  margin-bottom: 24px;
+}
+
+.dismiss-btn {
+  margin-top: 50vh;
+  width: 100%;
+}
