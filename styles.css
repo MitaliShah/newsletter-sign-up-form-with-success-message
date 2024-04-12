@@ -213,4 +213,31 @@ body {
   .sign-up-title {
     font-size: 56px;
   }
+
+  .success-container {
+    padding: 64px;
+    margin: 0;
+    max-width: 504px;
+    min-height: fit-content;
+    max-height: 40%;
+    height: min-content;
+  }
+
+  .success-icon {
+    margin-bottom: 40px;
+  }
+
+  .success-title {
+    font-size: 56px;
+    line-height: 1;
+  }
+
+  .dismiss-btn {
+    margin-top: 40px;
+    margin-bottom: 0;
+  }
+
+  .success-icon {
+    margin-top: 0;
+  }
 }
