@@ -28,7 +28,13 @@
     <!-- Main -->
     <main class="max-width-wrapper">
       <div class="sign-up-container" id="sign-up-container">
-        <img src="./assets//images/illustration-sign-up-mobile.svg" alt="" />
+        <picture>
+          <source
+            srcset="./assets/images/illustration-sign-up-desktop.svg"
+            media="(min-width: 58rem)"
+          />
+          <img src="./assets/images/illustration-sign-up-mobile.svg" alt="" />
+        </picture>
 
         <div class="card sign-up-text">
           <h1 class="sign-up-title">Stay updated!</h1>

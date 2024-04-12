@@ -180,3 +180,14 @@ body {
 .dismiss-btn:hover {
   background-color: var(--grey);
 }
+
+@media (min-width: 58rem) {
+  .max-width-wrapper {
+    max-width: 58rem;
+    margin: 0 10px;
+  }
+
+  .sign-up-container {
+    display: flex;
+  }
+}
