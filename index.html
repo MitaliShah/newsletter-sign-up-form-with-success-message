@@ -45,10 +45,13 @@
 
           <!-- Sign-up form start -->
           <form class="sign-up-form" id="sign-up-form">
-            <label class="email-label">Email address</label>
-            <p class="error-message hidden">
-              <small>Valid email required</small>
-            </p>
+            <div class="label-error-container">
+              <label class="email-label">Email address</label>
+              <p class="error-message hidden">
+                <small>Valid email required</small>
+              </p>
+            </div>
+
             <input
               class="email"
               id="email"
@@ -65,19 +68,22 @@
 
       <!-- Success message start -->
       <div class="card success-container hidden" id="success-container">
-        <img
-          class="success-icon"
-          src="./assets/images/icon-success.svg"
-          alt=""
-        />
-        <h2 class="success-title">Thanks for subscribing!</h2>
-        <p>
-          A confirmation email has been sent to
-          <strong class="submitted-email" id="submitted-email"
-            >ash@loremcompany.com</strong
-          >. Please open it and click the button inside to confirm your
-          subscription.
-        </p>
+        <div class="success-content">
+          <img
+            class="success-icon"
+            src="./assets/images/icon-success.svg"
+            alt=""
+          />
+          <h2 class="success-title">Thanks for subscribing!</h2>
+          <p>
+            A confirmation email has been sent to
+            <strong class="submitted-email" id="submitted-email"
+              >ash@loremcompany.com</strong
+            >. Please open it and click the button inside to confirm your
+            subscription.
+          </p>
+        </div>
+
         <button class="btn dismiss-btn" id="dismiss-btn">
           Dismiss message
         </button>

@@ -29,6 +29,8 @@ function clearError() {
   if (validate(emailInput.value)) {
     errorMessage.classList.add("hidden");
     emailInput.classList.remove("error");
+  } else {
+    showErrors();
   }
 }
 
@@ -55,4 +57,4 @@ const submitForm = (event) => {
 // Event-listeners
 subscribeBtn.addEventListener("click", submitForm);
 dismissBtn.addEventListener("click", switchSections);
-emailInput.addEventListener("oninput", clearError);
+emailInput.addEventListener("input", clearError);

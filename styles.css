@@ -46,6 +46,10 @@ h6 {
 :root {
   /* PRIMARY */
 
+  --tomato: hsl(4, 100%, 67%);
+
+  /* NEUTRAL */
+
   --dark-slate-grey: hsl(234, 29%, 20%);
   --charcoal-grey: hsl(235, 18%, 26%);
   --grey: hsl(231, 7%, 60%);
@@ -104,10 +108,25 @@ body {
   font-weight: 700;
 }
 
+.label-error-container {
+  display: flex;
+}
+
+.email-label,
+.error-message {
+  display: inline-flex;
+}
+
+.error-message {
+  margin-left: auto;
+  color: var(--tomato);
+}
+
 .email {
   padding: 16px 24px;
   border: 1px solid var(--grey);
   border-radius: 8px;
+  outline: none;
 }
 
 .btn {
@@ -133,13 +152,14 @@ body {
 }
 
 .error {
-  color: red;
+  color: var(--tomato);
+  border: 1px solid var(--tomato);
 }
 
 .success-container {
   height: 100vh;
-  /* display: flex; */
-  flex-direction: column;
+  margin-top: 20vh;
+  margin-bottom: 200px;
 }
 
 .success-icon {
@@ -152,6 +172,11 @@ body {
 }
 
 .dismiss-btn {
-  margin-top: 50vh;
+  margin-top: 263px;
+  margin-bottom: 40px;
   width: 100%;
+}
+
+.dismiss-btn:hover {
+  background-color: var(--grey);
 }
