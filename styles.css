@@ -167,8 +167,6 @@ body {
 
 .success-container {
   height: 100vh;
-  /* margin-top: 20vh;
-  margin-bottom: 200px; */
 }
 
 .success-icon {
@@ -202,7 +200,6 @@ body {
   }
 
   .sign-up-container {
-    /* display: flex; */
     flex-direction: row-reverse;
     padding: 24px;
   }
