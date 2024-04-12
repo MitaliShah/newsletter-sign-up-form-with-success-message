@@ -54,12 +54,15 @@ h6 {
   --charcoal-grey: hsl(235, 18%, 26%);
   --grey: hsl(231, 7%, 60%);
   --white: hsl(0, 0%, 100%);
+
+  /* GRADIENT */
+  --gradient: linear-gradient(hsl(4, 100%, 67%), #ff527b);
 }
 
 body {
   margin: 0;
   padding: 0;
-  min-height: 100vh;
+  min-height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -67,6 +70,7 @@ body {
   font-weight: 400;
   font-style: normal;
   background-color: var(--charcoal-grey);
+  color: var(--dark-slate-grey);
 }
 
 .max-width-wrapper {
@@ -163,8 +167,8 @@ body {
 
 .success-container {
   height: 100vh;
-  margin-top: 20vh;
-  margin-bottom: 200px;
+  /* margin-top: 20vh;
+  margin-bottom: 200px; */
 }
 
 .success-icon {
@@ -184,6 +188,10 @@ body {
 
 .dismiss-btn:hover {
   background-color: var(--grey);
+}
+
+.subscribe-btn:hover {
+  background: var(--gradient);
 }
 
 @media (min-width: 58rem) {
