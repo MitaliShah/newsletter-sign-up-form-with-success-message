@@ -50,6 +50,7 @@ const submitForm = (event) => {
     clearError();
     updateSuccessMessage(emailInput);
     switchSections();
+
     emailInput.value = "";
   }
 };
